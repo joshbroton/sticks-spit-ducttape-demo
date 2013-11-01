@@ -1,0 +1,297 @@
+/* ---- ---- ---- CSS RESET ---- ---- ---- */
+html, body {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 1.2;
+  font-family: inherit; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+audio[controls], canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+div, section {
+  vertical-align: top; }
+
+/* ---- ---- ---- STYLES ---- ---- ---- */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'museo';
+  src: url("museo_slab_500-webfont.eot");
+  src: url("museo_slab_500-webfont.eot?#iefix") format("embedded-opentype"), url("museo_slab_500-webfont.woff") format("woff"), url("museo_slab_500-webfont.ttf") format("truetype"), url("museo_slab_500-webfont.svg#museo_slab_500regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 24px;
+  font-family: museo, Times New Roman, Serif; }
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+  font-family: museo, Times New Roman, Serif; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background: white;
+  color: #222222;
+  font-family: Lato, Arial, Helvetica, Sans-Serif;
+  text-rendering: optimizeLegibility; }
+
+a {
+  color: #be9034; }
+
+p {
+  margin-bottom: 1em; }
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  background-color: white;
+  min-height: 100%;
+  margin: 0 auto; }
+
+header {
+  margin-bottom: 2em; }
+  header img {
+    width: 60%;
+    max-width: 400px;
+    margin: 10px; }
+
+nav ul {
+  width: auto;
+  margin: 0 auto;
+  text-align: center; }
+nav li {
+  display: inline;
+  list-style: none; }
+  nav li a {
+    display: inline-block;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-decoration: none; }
+
+.explanation {
+  width: 70%;
+  margin: 0 auto 2em auto;
+  font-size: 1.25em; }
+
+.main {
+  padding: 0 10px; }
+  .main img {
+    width: 100%; }
+
+.sidebar img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  border-bottom: 2px solid #ddd; }
+
+.demo .sidebar div {
+  padding: 0 10px; }
+.demo .sidebar img {
+  margin: 1em auto; }
+
+footer {
+  font-size: .75em;
+  text-align: center;
+  padding: 3em;
+  clear: both; }
+
+.floats .content {
+  *zoom: 1; }
+  .floats .content:before, .floats .content:after {
+    display: table;
+    content: ""; }
+  .floats .content:after {
+    clear: both; }
+@media only screen and (min-width: 54em) {
+  .floats .main {
+    float: left;
+    width: 66%; } }
+@media only screen and (min-width: 54em) {
+  .floats .sidebar {
+    float: right;
+    width: 30%; } }
+@media only screen and (min-width: 36em) and (max-width: 54em) {
+  .floats .sidebar article {
+    float: left;
+    width: 33.33333333333%; } }
+
+.tablecell img {
+  margin-bottom: 1em; }
+@media only screen and (min-width: 36em) {
+  .tablecell .content {
+    display: table; } }
+.tablecell .main,
+.tablecell .sidebar {
+  padding: 40px; }
+  @media only screen and (min-width: 36em) {
+    .tablecell .main,
+    .tablecell .sidebar {
+      display: table-cell;
+      vertical-align: middle; } }
+.tablecell .main {
+  background: rgba(0, 0, 0, 0.1); }
+.tablecell .sidebar {
+  background: rgba(0, 0, 0, 0.2); }
+
+.justify .sidebar article {
+  padding: 10px; }
+@media only screen and (min-width: 36em) {
+  .justify .sidebar {
+    text-align: justify; }
+    .justify .sidebar article {
+      display: inline-block;
+      width: 22.5%;
+      margin-bottom: 3.333333333333333%;
+      padding: 8px;
+      text-align: left;
+      vertical-align: top;
+      background: rgba(0, 0, 0, 0.1); }
+    .justify .sidebar:after {
+      content: '';
+      display: inline-block;
+      width: 100%; }
+    .justify .sidebar .extra {
+      display: inline-block;
+      border: 0;
+      margin: 0;
+      padding: 0; } }
+@media only screen and (min-width: 54em) {
+  .justify .sidebar article {
+    width: 15%; } }
+
+.flexbox .item {
+  padding: 2em;
+  font-size: 1.25em; }
+.flexbox .item1 {
+  background: rgba(0, 0, 0, 0.1); }
+.flexbox .item2 {
+  background: rgba(0, 0, 0, 0.2); }
+.flexbox .item3 {
+  background: rgba(0, 0, 0, 0.3); }
+.flexbox .item4 {
+  background: rgba(0, 0, 0, 0.4); }
+.flexbox .content {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap; }
+.flexbox .item {
+  width: 100%;
+  display: -webkit-flex;
+  margin-bottom: 1em; }
+  .flexbox .item div {
+    margin: auto; }
+  @media only screen and (min-width: 36em) {
+    .flexbox .item {
+      width: 48%;
+      margin-bottom: 2%; } }
+  @media only screen and (min-width: 54em) {
+    .flexbox .item {
+      width: 23%;
+      margin-bottom: 0; } }
+
+/* --------------------------------------------------------------- FOR 1-DEMO.HTML */
+/* FOR DEMO PURPOSES TO SHOW RWD */
+/* ----------------------------------------------------------------------------*/
+/* --------------------------------------------------------------- FOR 2-FLOAT.HTML */
+/* ----------------------------------------------------------------------------*/
+/* --------------------------------------------------------------- FOR 3-TABLECELL.HTML */
+/* ----------------------------------------------------------------------------*/
+/* --------------------------------------------------------------- FOR 4-JUSTIFY.HTML */
+/** {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.extra {
+	display: none;
+}
+
+.content {
+	padding: 1em;
+}
+
+.sidebar article {
+	background: rgba(0,0,0,.1);
+
+	div {
+		padding: .5em;
+	}
+}
+
+@media only screen and (min-width: 48em) {
+	.sidebar {
+		article {
+			float: left;
+			width: 22.5%;
+			margin-right: 3.3333333333333%;
+
+			&:nth-child(4n+4) {
+				margin-right: 0;
+			}
+		}
+	}
+}*/
+/*@media only screen and (min-width: 48em) {
+	.sidebar {
+		text-align: justify;
+
+		article {
+			display: inline-block;
+			width: 22.5%;
+			text-align: left;
+			vertical-align: top;
+			margin-bottom: 3.333333333333333%;
+			border: 1px solid red;
+		}
+
+		&:after {
+			content: '';
+			display: inline-block;
+			width: 100%;
+		}
+
+		.extra {
+			display: inline-block;
+			border: 0;
+			margin: 0;
+		}
+	}
+}
+
+@media only screen and (min-width: 64em) {
+	.sidebar {
+		article {
+			width: 15%;
+		}
+	}*/
+/* ----------------------------------------------------------------------------*/
+/* --------------------------------------------------------------- FOR 5-FLEXBOX.HTML */
+/* ----------------------------------------------------------------------------*/
