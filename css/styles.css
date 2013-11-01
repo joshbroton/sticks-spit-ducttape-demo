@@ -50,7 +50,7 @@ h3 {
 body {
   width: 100%;
   height: 100%;
-  background: white;
+  background: white url(../rs/grid.png) repeat center top;
   color: #222222;
   font-family: Lato, Arial, Helvetica, Sans-Serif;
   text-rendering: optimizeLegibility; }
@@ -104,11 +104,6 @@ nav li {
   max-width: 500px;
   border-bottom: 2px solid #ddd; }
 
-.demo .sidebar div {
-  padding: 0 10px; }
-.demo .sidebar img {
-  margin: 1em auto; }
-
 footer {
   font-size: .75em;
   text-align: center;
@@ -126,20 +121,27 @@ footer {
   .floats .main {
     float: left;
     width: 66%; } }
-@media only screen and (min-width: 54em) {
-  .floats .sidebar {
-    float: right;
-    width: 30%; } }
-@media only screen and (min-width: 36em) and (max-width: 54em) {
-  .floats .sidebar article {
-    float: left;
-    width: 33.33333333333%; } }
+.floats .sidebar {
+  padding: 10px; }
+  .floats .sidebar div {
+    padding: 0 10px; }
+  .floats .sidebar img {
+    margin: 1em auto; }
+  @media only screen and (min-width: 54em) {
+    .floats .sidebar {
+      float: right;
+      width: 30%; } }
+  @media only screen and (min-width: 36em) and (max-width: 54em) {
+    .floats .sidebar article {
+      float: left;
+      width: 33.33333333333%; } }
 
 .tablecell img {
   margin-bottom: 1em; }
 @media only screen and (min-width: 36em) {
   .tablecell .content {
-    display: table; } }
+    display: table;
+    padding: 0 10px; } }
 .tablecell .main,
 .tablecell .sidebar {
   padding: 40px; }
@@ -157,6 +159,7 @@ footer {
   padding: 10px; }
 @media only screen and (min-width: 36em) {
   .justify .sidebar {
+    padding: 10px;
     text-align: justify; }
     .justify .sidebar article {
       display: inline-block;

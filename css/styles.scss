@@ -72,7 +72,7 @@ h3 {
 body {
 	width:100%;
 	height:100%;
-	background:white;
+	background:white url(../rs/grid.png) repeat center top;
 	color:#222222;
 	font-family:Lato, Arial, Helvetica, Sans-Serif;
 	text-rendering:optimizeLegibility;
@@ -147,18 +147,6 @@ nav {
 	}
 }
 
-.demo {
-	.sidebar {
-		div  {
-			padding: 0 10px;
-		}
-
-		img {
-			margin: 1em auto;
-		}
-	}
-}
-
 footer {
 	font-size:.75em;
 	text-align:center;
@@ -178,6 +166,16 @@ footer {
         }
     }
     .sidebar {
+        padding: 10px;
+
+        div  {
+            padding: 0 10px;
+        }
+
+        img {
+            margin: 1em auto;
+        }
+
         @media only screen and (min-width: 54em) {
             float: right;
             width: 30%;
@@ -200,6 +198,7 @@ footer {
     .content {
         @media only screen and (min-width: 36em) {
             display: table;
+            padding: 0 10px;
         }
     }
 
@@ -229,6 +228,7 @@ footer {
 
     @media only screen and (min-width: 36em) {
         .sidebar {
+            padding: 10px;
             text-align: justify;
 
             article {
