@@ -98,6 +98,8 @@ nav li {
   .main img {
     width: 100%; }
 
+.sidebar article {
+  padding: 10px 0; }
 .sidebar img {
   display: block;
   width: 100%;
@@ -138,22 +140,27 @@ footer {
 
 .tablecell img {
   margin-bottom: 1em; }
-@media only screen and (min-width: 36em) {
+@media only screen and (min-width: 54em) {
   .tablecell .content {
     display: table;
     padding: 0 10px; } }
 .tablecell .main,
+.tablecell .secondary,
 .tablecell .sidebar {
   padding: 40px; }
-  @media only screen and (min-width: 36em) {
+  @media only screen and (min-width: 54em) {
     .tablecell .main,
+    .tablecell .secondary,
     .tablecell .sidebar {
       display: table-cell;
+      width: 33.333333333333%;
       vertical-align: middle; } }
 .tablecell .main {
   background: rgba(0, 0, 0, 0.1); }
-.tablecell .sidebar {
+.tablecell .secondary {
   background: rgba(0, 0, 0, 0.2); }
+.tablecell .sidebar {
+  background: rgba(0, 0, 0, 0.3); }
 
 .justify .sidebar article {
   padding: 10px; }

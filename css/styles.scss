@@ -139,6 +139,10 @@ nav {
 }
 	
 .sidebar {
+    article {
+        padding: 10px 0;
+    }
+
 	img {
 		display:block;
 		width:100%;
@@ -196,18 +200,20 @@ footer {
     }
 
     .content {
-        @media only screen and (min-width: 36em) {
+        @media only screen and (min-width: 54em) {
             display: table;
             padding: 0 10px;
         }
     }
 
     .main,
+    .secondary,
     .sidebar {
         padding: 40px;
 
-        @media only screen and (min-width: 36em) {
+        @media only screen and (min-width: 54em) {
             display: table-cell;
+            width: 33.333333333333%;
             vertical-align: middle;
         }
     }
@@ -216,8 +222,12 @@ footer {
         background: rgba(0,0,0,.1);
     }
 
-    .sidebar {
+    .secondary {
         background: rgba(0,0,0,.2);
+    }
+
+    .sidebar {
+        background: rgba(0,0,0,.3);
     }
 }
 
